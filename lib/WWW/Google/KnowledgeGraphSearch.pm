@@ -1,6 +1,6 @@
 package WWW::Google::KnowledgeGraphSearch;
 
-$WWW::Google::KnowledgeGraphSearch::VERSION   = '0.01';
+$WWW::Google::KnowledgeGraphSearch::VERSION   = '0.02';
 $WWW::Google::KnowledgeGraphSearch::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,15 +9,14 @@ WWW::Google::KnowledgeGraphSearch - Interface to Google Knowledge Graph Search A
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
 use 5.006;
-use JSON;
-use Data::Dumper;
 use URI;
 use JSON;
+use Data::Dumper;
 
 use WWW::Google::UserAgent;
 use WWW::Google::UserAgent::DataTypes qw(:all);

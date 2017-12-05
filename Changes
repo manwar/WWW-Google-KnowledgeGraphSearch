@@ -1,4 +1,7 @@
 Revision history for WWW::Google::KnowledgeGraphSearch
 
+0.02  Tue Dec 05 16:05:00 2017
+      - Added missing prereq as reported by CPANT TESTERS.
+
 0.01  Sun Dec 03 12:50:00 2017
       - First version, released.

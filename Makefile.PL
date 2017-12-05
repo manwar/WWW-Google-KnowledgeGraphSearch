@@ -20,10 +20,11 @@ WriteMakefile(
     },
     PREREQ_PM  => {
         'Moo'                    => '2.000000',
-        'namespace::clean'       => '0.24',
+        'namespace::autoclean'   => '0.28',
         'URI'                    => '1.65',
         'WWW::Google::UserAgent' => '0.21',
-        'Type::Tiny'             => '1.000005'
+        'Type::Tiny'             => '1.000005',
+        'JSON'                   => '2.90',
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'WWW-Google-KnowledgeGraphSearch-*' },
