@@ -1,6 +1,6 @@
 package WWW::Google::KnowledgeGraphSearch;
 
-$WWW::Google::KnowledgeGraphSearch::VERSION   = '0.02';
+$WWW::Google::KnowledgeGraphSearch::VERSION   = '0.03';
 $WWW::Google::KnowledgeGraphSearch::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ WWW::Google::KnowledgeGraphSearch - Interface to Google Knowledge Graph Search A
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
@@ -101,11 +101,13 @@ its features might change unexpectedly until it graduates.
 
     my $api_key = 'Your_API_Key';
     my $engine  = WWW::Google::KnowledgeGraphSearch->new(api_key => $api_key);
-    my $result  = $engine->search('Google');
+    my $result  = $engine->search('Taylor Swift');
 
-    foreach my $item (@{$result->items}) {
-       print "Snippet: ", $item->snippet, "\n";
-    }
+    print $result->[0]->id, "\n";
+    print $result->[0]->name, "\n";
+    print $result->[0]->description, "\n";
+    print $result->[0]->descriptionBody, "\n";
+    print $result->[0]->resultScore, "\n";
 
 See L<WWW::Google::KnowledgeGraphSearch::Result> for further details of the search result.
 
